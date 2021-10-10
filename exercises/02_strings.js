@@ -1,6 +1,4 @@
-// 2. Strings
-
-console.log('\n--EXERCISE 2');
+console.log('\n--EXERCISE 2: STRINGS');
 
 // a. Crear una variable de tipo string con al menos 10 caracteres y convertir todo el texto en mayúscula (utilizar toUpperCase).
 

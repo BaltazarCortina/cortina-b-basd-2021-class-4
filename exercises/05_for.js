@@ -1,6 +1,4 @@
-// 5. For
-
-console.log('\n--EXERCISE 4: FOR');
+console.log('\n--EXERCISE 5: FOR');
 
 // a. Crear un array que contenga 5 palabras y recorrer dicho array utilizando un bucle for de JavaScript para mostrar una alerta utilizando cada una de las palabras.
 
