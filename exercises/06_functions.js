@@ -65,7 +65,9 @@ function sum3(num1, num2) {
 console.log(sum3(5, 6.4));
 
 
-// e. Convertir la validación del ejercicio 6b) en una función separada y llamarla dentro de la función suma probando que todo siga funcionando igual.
+// e. Convertir la validación del ejercicio 6d) (ejercicio 6b)) en una función separada y llamarla dentro de la función suma probando que todo siga funcionando igual.
+
+// At first it said 6b and then it was changed to 6d, so I did both.
 
 console.log('\n-Exercise 6.e:');
 
@@ -77,20 +79,22 @@ function isNumber(num1, num2) {
     return true;
 }
 
+function isInteger(num) {
+    if (!validateInteger(num)) {
+        alert('One of the numbers is not an integer!');
+        num = Math.round(num);
+    }
+    return num;
+}
+
 function sum4(num1, num2) {
     if (!isNumber(num1, num2)) {
         return NaN;
     }
 
-    if (!validateInteger(num1)) {
-        alert('The first number is not an integer!');
-        num1 = Math.round(num1);
-    }
+    num1 = isInteger(num1);
     
-    if (!validateInteger(num2)) {
-        alert('The second number is not an integer!');
-        num2 = Math.round(num2);
-    }
+    num2 = isInteger(num2);
 
     return num1 + num2;
 }
@@ -98,3 +102,5 @@ function sum4(num1, num2) {
 console.log(sum4(5, 7));
 
 console.log(sum4(5, '7'));
+
+console.log(sum4(5, 2.6));
